@@ -7,31 +7,28 @@ using System.Threading.Tasks;
 namespace MyGISBLL
 {
     public class Map
+
     {
-        private string name = "N/A";
+        private Layer[] _layers = new Layer[0];
+        private int _layerCount = 0;
 
-        public string Name
+
+        public string Name { get; set; }
+        public Layer[] Layers {get { return _layers; }}
+
+        public int LayerCount { get { return _layerCount; } }
+        
+        public void AddLayer(Layer layer)
         {
-            get
-            {
-                return name;
-            }
-
-            set
-            {
-                name = value;
-            }
+            Array.Resize(ref _layers, _layers.Length + 1);
+            _layers[_layers.Length - 1] = layer;
+            _layerCount++;
+               
         }
 
-        public readonly Layer[] Layers = new Layer[];
-        public Layer[] Layers
-        {
-            get
-            {
-                return Layers;
-            }
-        }
 
     }
+
 }
+
 
