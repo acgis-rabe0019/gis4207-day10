@@ -6,7 +6,21 @@ using System.Threading.Tasks;
 
 namespace MyGISBLL
 {
-    class Layer
+    public class Layer
     {
+        private string name = "N/A";
+
+        public string Name
+        {
+            get
+            {
+                return name;
+            }
+
+            set
+            {
+                name = value;
+            }
+        }
     }
 }
