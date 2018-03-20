@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGISBLL", "MyGISBLL\MyGISBLL.csproj", "{EA19A74E-FEB2-4469-9279-05431E98723A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyGisConsole", "MyGisConsole\MyGisConsole.csproj", "{0751113B-97D0-4881-8AB5-9A53E618F22A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYGisBLLTests", "MYGisBLLTests\MYGisBLLTests.csproj", "{9738F04F-B70B-4522-BD33-E7997C4B57A1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EA19A74E-FEB2-4469-9279-05431E98723A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA19A74E-FEB2-4469-9279-05431E98723A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA19A74E-FEB2-4469-9279-05431E98723A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA19A74E-FEB2-4469-9279-05431E98723A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0751113B-97D0-4881-8AB5-9A53E618F22A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0751113B-97D0-4881-8AB5-9A53E618F22A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0751113B-97D0-4881-8AB5-9A53E618F22A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0751113B-97D0-4881-8AB5-9A53E618F22A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9738F04F-B70B-4522-BD33-E7997C4B57A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9738F04F-B70B-4522-BD33-E7997C4B57A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9738F04F-B70B-4522-BD33-E7997C4B57A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9738F04F-B70B-4522-BD33-E7997C4B57A1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
