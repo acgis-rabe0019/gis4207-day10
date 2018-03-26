@@ -11,7 +11,6 @@ namespace MyGISBLL
     {
         private Layer[] _layers = new Layer[0];
         private int _layerCount = 0;
-        public int layerIndex = 0;
         private string _name = "";
 
         public string Name
@@ -21,6 +20,7 @@ namespace MyGISBLL
         }
 
         public Layer[] Layers { get { return _layers; } }
+
         public int LayerCount { get { return _layerCount; } }
 
         public void AddLayer(Layer layer)
@@ -30,6 +30,7 @@ namespace MyGISBLL
             _layerCount++;
 
         }
+
         public Layer GetLayer(int layerIndex)
         {
             return _layers[layerIndex];
@@ -50,6 +51,17 @@ namespace MyGISBLL
 
             // If it doesn't, return null
             return layer;
+        }
+
+        public void RemoveLayer(int layerIndex)
+        {
+            Layer layer = null;
+            if (LayerCount > LayerCount-1)
+
+                _layers[_layers.Length - 1] = layer;
+                _layerCount--;
+                Array.Resize(ref _layers, _layers.Length - 1);
+
         }
     }
 }
