@@ -14,7 +14,7 @@ namespace MyGISBLL
         {
             get
             {
-                return name;
+                return name;                
             }
 
             set
