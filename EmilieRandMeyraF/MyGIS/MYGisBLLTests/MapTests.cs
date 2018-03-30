@@ -99,6 +99,12 @@ namespace MYGisBLLTests
 
             Assert.AreEqual(layerB.Name, actual);
             Assert.AreEqual(2, map.LayerCount);
+
+            //Arrange
+
+            //Act
+
+            //Assert
         }
     }
 }

@@ -40,7 +40,20 @@ namespace MyGISBLL
 
         public Layer GetLayer(int layerIndex)
         {
-            return _layers[layerIndex];
+                try
+                {
+                return _layers[layerIndex];
+                }
+
+                catch (System.IndexOutOfRangeException e)
+                {
+                System.Console.WriteLine(e.Message);
+         
+                throw new System.ArgumentOutOfRangeException("This index is out of range: {0}", e);
+
+               }
+            
+            
         }
 
         public Layer GetLayerByName(string layerName)
@@ -58,6 +71,11 @@ namespace MyGISBLL
                     return lyr;
             }
             return layer;
+        }
+
+        public object GetLayerByName(object layerManitoba)
+        {
+            throw new NotImplementedException();
         }
 
         public void RemoveLayer(int layerIndex)

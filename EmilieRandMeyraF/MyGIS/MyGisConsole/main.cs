@@ -15,32 +15,30 @@ namespace MyGisConsole
         {
             Map mapCanada = new Map();
             mapCanada.Name = "Canada";
-            Console.WriteLine("Map: {0}", mapCanada.Name);
+
 
             Layer layerOntario = new Layer();
             layerOntario.Name = "Ontario";
-            Layer layerManitoba = new Layer();
-            layerManitoba.Name = "Manitoba";
+            Layer Manitoba = new Layer();
+            Manitoba.Name = "Manitoba";
             Layer layerAlberta = new Layer();
             layerAlberta.Name = "Alberta";
 
             mapCanada.AddLayer(layerOntario);
-            mapCanada.AddLayer(layerManitoba);
+            mapCanada.AddLayer(Manitoba);
             mapCanada.AddLayer(layerAlberta);
-
-            mapCanada.GetLayer(0);
-            mapCanada.GetLayerByName("Ontario");
-            //Console.WriteLine("     Layer{0}: {1}", .Layers, .Name);
-       
+   
             mapCanada.GetLayer(1);
             mapCanada.GetLayerByName("Manitoba");
-            Console.WriteLine("{0}", x);
-
-            mapCanada.GetLayer(2);
-            mapCanada.GetLayerByName("Alberta");
-            Console.WriteLine("", layerAlberta);
-
+            Console.WriteLine("{0}", mapCanada.GetLayer(1).Name);
+            Console.WriteLine("{0}", mapCanada.GetLayerByName("Manitoba").Name);
+            Console.WriteLine("Map: {0}", mapCanada.Name);
+            Console.WriteLine("     Layer {0}: {1}", 0, mapCanada.Layers[0].Name);
+            Console.WriteLine("     Layer {0}: {1}", 1, mapCanada.Layers[1].Name);
+            Console.WriteLine("     Layer {0}: {1}", 2, mapCanada.Layers[2].Name);
+            Console.WriteLine("     Layer {0}: {1}", 2, mapCanada.Layers[222].Name);
             Console.ReadKey();
+
         }
         
     }
