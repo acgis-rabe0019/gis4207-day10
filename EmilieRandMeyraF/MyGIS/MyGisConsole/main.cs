@@ -9,6 +9,8 @@ namespace MyGisConsole
 {
     class main
     {
+        private static object map;
+
         static void Main(string[] args)
         {
             Map mapCanada = new Map();
@@ -26,23 +28,15 @@ namespace MyGisConsole
             mapCanada.AddLayer(layerManitoba);
             mapCanada.AddLayer(layerAlberta);
 
-            mapCanada.GetLayer(1);
-            Console.WriteLine("", layerManitoba);
-            mapCanada.GetLayerByName("Manitoba");
-            Console.WriteLine("",layerManitoba);
-
             mapCanada.GetLayer(0);
-            Console.WriteLine("", layerOntario);
             mapCanada.GetLayerByName("Ontario");
-            Console.WriteLine("", layerOntario);
+            //Console.WriteLine("     Layer{0}: {1}", .Layers, .Name);
        
             mapCanada.GetLayer(1);
-            Console.WriteLine("", layerManitoba);
             mapCanada.GetLayerByName("Manitoba");
-            Console.WriteLine("", layerManitoba);
+            Console.WriteLine("{0}", x);
 
             mapCanada.GetLayer(2);
-            Console.WriteLine("", layerAlberta);
             mapCanada.GetLayerByName("Alberta");
             Console.WriteLine("", layerAlberta);
 
