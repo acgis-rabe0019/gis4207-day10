@@ -11,12 +11,12 @@ namespace MyGisConsole
     {
         static void Main(string[] args)
         {
-
             Map mapCanada = new Map();
             mapCanada.Name = "Canada";
+            Console.WriteLine("Map: {0}", mapCanada.Name);
+
             Layer layerOntario = new Layer();
             layerOntario.Name = "Ontario";
-           
             Layer layerManitoba = new Layer();
             layerManitoba.Name = "Manitoba";
             Layer layerAlberta = new Layer();
@@ -35,7 +35,7 @@ namespace MyGisConsole
             Console.WriteLine("", layerOntario);
             mapCanada.GetLayerByName("Ontario");
             Console.WriteLine("", layerOntario);
-
+       
             mapCanada.GetLayer(1);
             Console.WriteLine("", layerManitoba);
             mapCanada.GetLayerByName("Manitoba");
@@ -46,11 +46,8 @@ namespace MyGisConsole
             mapCanada.GetLayerByName("Alberta");
             Console.WriteLine("", layerAlberta);
 
-
-
-
-
+            Console.ReadKey();
         }
-       
+        
     }
 }

@@ -44,7 +44,7 @@ namespace MyGISBLL
         }
 
         public Layer GetLayerByName(string layerName)
-        // Code for finding layer by name
+         // Code for finding layer by name
         // Loop your list of layer names to see if you 
         // can find layerName
         // If it exists, return the layer with the name layerName
