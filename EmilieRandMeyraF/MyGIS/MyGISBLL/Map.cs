@@ -42,15 +42,13 @@ namespace MyGISBLL
         {
                 try
                 {
-                return _layers[layerIndex];
+                    return _layers[layerIndex];
                 }
 
-                catch (System.IndexOutOfRangeException e)
+                catch (IndexOutOfRangeException e)
                 {
-                System.Console.WriteLine(e.Message);
-         
-                throw new System.ArgumentOutOfRangeException("This index is out of range: {0}", e);
-
+                    Console.WriteLine(e.Message);
+                    return null;  
                }
             
             
