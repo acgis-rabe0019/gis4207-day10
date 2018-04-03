@@ -41,6 +41,9 @@ namespace MyGisConsole
             Console.WriteLine(mapCanada.GetLayerByName("Manitoba").Name);
             mapCanada.GetLayer(22);
 
+            int lyrindex = 45;
+            if (mapCanada.GetLayer(lyrindex) != null) ;
+
             Console.ReadKey();
         }
         
