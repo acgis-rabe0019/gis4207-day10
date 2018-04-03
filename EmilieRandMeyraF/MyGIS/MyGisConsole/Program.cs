@@ -7,7 +7,7 @@ using MyGISBLL;
 
 namespace MyGisConsole
 {
-    class main
+    class Program
     {
         private static object map;
 
@@ -36,9 +36,12 @@ namespace MyGisConsole
             Console.WriteLine("     Layer {0}: {1}", 0, mapCanada.Layers[0].Name);
             Console.WriteLine("     Layer {0}: {1}", 1, mapCanada.Layers[1].Name);
             Console.WriteLine("     Layer {0}: {1}", 2, mapCanada.Layers[2].Name);
-            Console.WriteLine("     Layer {0}: {1}", 2, mapCanada.Layers[222].Name);
-            Console.ReadKey();
+            
 
+            Console.WriteLine(mapCanada.GetLayerByName("Manitoba").Name);
+            mapCanada.GetLayer(22);
+
+            Console.ReadKey();
         }
         
     }

@@ -49,9 +49,7 @@ namespace MyGISBLL
                 {
                     Console.WriteLine(e.Message);
                     return null;  
-               }
-            
-            
+                }      
         }
 
         public Layer GetLayerByName(string layerName)
